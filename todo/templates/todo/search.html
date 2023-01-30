@@ -1,0 +1,15 @@
+{% extends 'todo/layout.html' %}
+
+{% block content %}
+
+<div style="margin-top: 50px;" class="ui container">
+    <form class="ui form" action="{{ url_for('search') }}" method="post">
+        <h3 class="test_css">Оптимизируй своё время c Python</h3>
+        <div class="field">
+            <label>Новая задача</label>
+            <input type="text" name="anime" placeholder="Введите название задачи"><br>
+        </div>
+        <button class="ui teal basic button" type="submit">Добавить</button>
+    </form>
+{% endblock content %}
+</div>
